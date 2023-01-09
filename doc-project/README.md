@@ -1,0 +1,137 @@
+<h1 align=center><b>Documentation Prototype - with HTML & CSS</b></h1>
+
+<br>
+
+## **HTML**
+```html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            height: 100vh;
+            background-color: #131313;
+            display: flex;
+        }
+        aside{
+            display: grid;
+            gap: 10px;
+            padding: 20px 50px;
+            border-right: 5px solid grey;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        span {
+            display: block;
+            background-color: rgb(149, 232, 243);
+            height: 5px;
+            border-radius: 15px;
+            width: 100%;
+            margin-bottom: 10px;
+
+        }
+        aside > div {
+            margin: 10px 0;
+            width: 100%;
+            height: 2px;
+            border-bottom: 1px solid grey ;
+        }
+        li {
+            margin-left: 35px;
+        }
+        a {
+            text-decoration: none;
+        }
+        main {
+            overflow: scroll;
+            height: 100%;
+            width: 100%;
+            display: grid;
+            place-items: center;
+            padding: 20px 20px;
+        }
+        main > div {
+            height: 400px;
+            width: 100%;
+            display: grid;
+            place-items: center;
+            margin: 15px 0;
+            color: black;
+            font-size: 40px;
+            background-color: rgb(116, 218, 231);
+            border-radius: 5px;
+        }
+        h2:hover {
+            color: #1e90ff;
+        }
+        li>a:hover {
+            color: #d492f5;
+        }
+    </style>
+</head>
+<body>    
+    <aside>
+        <h1>Documentation</h1>
+        <span></span>
+        
+            <a href="#intro"><h2>Introduction</h2></a>
+            
+            <li><a href="#support">Supported Versions</a></li>
+            <li><a href="#about">About this App</a></li>
+            <li><a href="#tech">Technology</a></li>
+
+            <div></div>
+
+            <a href="#getstarted"><h2>Getting Started</h2></a>
+
+            <li><a href="#installation">Installing the App</a></li>
+            <li><a href="#opening">Opening the App</a></li>
+
+            <div></div>
+
+            <a href="#features"><h2>Basic Features</h2></a>
+
+            <li><a href="#1">Feature 1</a></li>
+            <li><a href="#2">Feature 2</a></li>
+            <li><a href="#3">Feature 3</a></li>
+            <li><a href="#4">Feature 4</a></li>
+            <li><a href="#5">Feature 5</a></li>
+
+            <div></div>
+    </aside>
+
+    <main>
+        <div id="intro">Introduction</div>
+        <div id="support">Support</div>
+        <div id="about">About</div>
+        <div id="tech">Technology used</div>
+        <div id="installation">Installation</div>
+        <div id="opening">Opening the app</div>
+        <div id="features">Basic features</div>
+        <div id="1">Feature 1</div>
+        <div id="2">Feature 2</div>
+        <div id="3">Feature 3</div>
+        <div id="4">Feature 4</div>
+        <div id="5">Feature 5</div>
+    </main>
+</body>
+</html>
+```
+<br>
+
+## **OUTPUT**
+
+<div align=center>
+<img src="preview.png" aria-hidden="true">
+</div>
