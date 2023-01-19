@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EASC Page</title>
+    <style>
+      * { margin:0; padding:0; scroll-behavior:smooth; }
+
+      /*  BODY SECTION  */
+      body {
+          font-family: sans-serif;
+          background: #1f2937;
+          color: white;
+      }
+      h2, p, a, button {color: #f9faf8; }
+
+      /* HEADER SECTION */
+      ul { display: flex; gap: 26px; }
+      li { list-style: none; }
+      a { text-decoration: none; }
+      header{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          height: 80px;
+          position: fixed;
+          top: 0;
+          gap: 750px;
+          width: 100%;
+          background: #1f2937;
+      }
+
+
+      /* MAIN,ABOUT,CONTACT SECTION */
+      main, section, section > div { display:grid; place-items:center;}
+      main, section { height:100vh; }
+      .main-text > h1 { font-size:7rem; line-height:1; }
+
+      .main-text {
+          width: 80%;
+          display: grid;
+          gap: 20px;
+      }
+
+      .main-text > button {
+          border: 0;
+          background: #3882f6;
+          border-radius: 6px;
+          padding: 10px 0;
+          width: 200px;
+      }
+
+      section { grid-template-columns:repeat(4,1fr); position:relative;}
+      section > h1 { font-size:70px; position:absolute; top:0; }
+      section h2, section p { color: #1f2937;}
+
+      section > div {
+        width: 80%;
+        height: 40%;
+        align-content: center;
+        gap: 30px;
+        border-radius: 2%;
+        text-align: center;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.8);
+        margin-top: 100px;
+      }
+
+      /*  FOOTER SECTION  */
+      footer { text-align:center; width:100%; padding:15px 0; }
+
+      /*  HOVER EFFECTS  */
+      a:hover, button:active { border-bottom:2px groove white;}
+    </style>
+</head>
+<body>
+    <header>
+        <h2>EASC</h2>
+        <ul>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+   <main id="main">
+        <div class="main-text">
+            <h1>Erode Arts & Science College</h1>
+            <p>Quality Education Since 1972, We aim to produce valuable patriotic citizens of future India</p>
+            <button>Enroll for Admission</button>
+        </div>
+    </main>
+    <section id="about">
+        <h1>About Us</h1>
+        <div>
+            <h2>Certified Teachers</h2>
+            <p>Even the all-powerfull painting has no control about it's blind texts</p>
+        </div>
+        <div>
+            <h2>Special Education</h2>
+            <p>Even the all-powerfull painting has no control about it's blind texts</p>
+        </div>
+        <div>
+            <h2>Book & Library</h2>
+            <p>Even the all-powerfull painting has no control about it's blind texts</p>
+        </div>
+        <div>
+            <h2>Welfare associations</h2>
+            <p>Even the all-powerfull painting has no control about it's blind texts</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Contact</h1>
+        <div>
+            <h2>Address:</h2>
+            <p>205, Chennimalai Road, Rangampalayam,<br>Erode - 638 009</p>
+        </div>
+        <div>
+            <h2>E-mail id:</h2>
+            <p>erodearts2006@yahoo.co.in</p>
+        </div>
+        <div>
+            <h2>Office:</h2>
+            <p>0424 2430004</p>
+        </div>
+        <div>
+            <h2>Fax:</h2>
+            <p>0424 2430095</p>
+        </div>
+    </section>
+   <footer>
+     <div>
+      <p>&copy; Erode Arts & Science College</p>
+     </div>
+   </footer>
+</body>
+</html>
